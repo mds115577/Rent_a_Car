@@ -1,16 +1,13 @@
-# rental_cars
+RENT A CAR
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+(Under Deveolpment)
+Booking a cars through your mobile using this app, its very easy to use and very reliable , this app is made for a particular company who have multiple branches across the country or state , where user can select availibe cars based on their location and book the car for his/her favored pick-up and drop-off date
+  
+FEATURES AND TECHNOLOGIES USED:- 
+- Book cars based on your location.
+- Getx used for state management.
+- Rest Api. 
+- Feedback to admin. 
+- Payment Integration. 
+- Google SignIn
+- Otp Verification
