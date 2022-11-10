@@ -16,8 +16,11 @@ import 'package:rental_cars/app/modules/view_cars/views/view_cars_view.dart';
 import '../controllers/dashboard_controller.dart';
 
 class DashboardView extends GetView<DashboardController> {
+  final String? user;
   final DashboardController _dashboardController =
       Get.put(DashboardController());
+
+  DashboardView({this.user});
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +103,7 @@ class DashboardView extends GetView<DashboardController> {
       ),
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Welcome User',
+        title: Text('Welcome $user',
             style: GoogleFonts.josefinSans(
                 fontSize: 30.sp, fontWeight: FontWeight.bold)),
         centerTitle: true,
@@ -166,9 +169,11 @@ class DashboardView extends GetView<DashboardController> {
                                               child: Text(e),
                                             );
                                           }).toList(),
-                                          onTap: () => _dashboardController
+                                          onTap: () {
+                                            _dashboardController
                                               .branch
-                                              .clear(),
+                                              .clear();
+                                          },
                                           onChanged: (selectedValue) async {
                                             await _dashboardController
                                                 .changeModel(selectedValue);
